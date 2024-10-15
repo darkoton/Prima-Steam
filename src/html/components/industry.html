@@ -1,15 +1,19 @@
-<section class='industry relative'>
-  <div class="industry-bg -z-10 flex items-center absolute w-full h-full top-0 left-0">
-    <img src="./img/industry/woman.png" class="w-[55%] h-full object-cover" alt="">
-    <div class="w-[45%] h-full bg-[#0B1618]"></div>
+<section class='industry relative bg-[#0B1618]'>
+  <div class="industry-bg hidden lg:flex items-center after:content-[''] after:bg-gradient-to-l after:from-black/90 after:to-black/20 after:absolute after:w-full after:h-full absolute w-full max-w-[50%] xl:max-w-[55%] h-full top-0 left-0">
+    <img src="./img/industry/woman.png" class="-scale-x-100 w-full h-full object-cover border-r-[1px] border-[#0B1618]" alt="">
   </div>
   <div class='industry__wrapper'>
-    <div class='industry__container container'>
-      <div class='industry__body pt-[42px] pb-[30px] flex justify-end'>
-        <div class="industry__right w-full max-w-[44.5%] pl-[30px]">
-          <h2 class="industry__title block-title text-white mb-[50px]">Industries we support
+    <div class='industry__container lg:container'>
+      <div class='industry__body lg:pt-[42px] pb-[30px] gap-[30px] flex items-center lg:items-end flex-col'>
+        
+        <div class="industry__left w-full lg:hidden">
+          <img class="w-full object-cover max-h-[400px]" src="./img/industry/woman.png" alt="">
+        </div>
+       
+        <div class="industry__right container lg:container-none w-full lg:max-w-[50%] xl:max-w-[42.5%] lg:pl-[30px]">
+          <h2 class="industry__title block-title text-white mb-[30px] lg:mb-[50px]">Industries we support
           </h2>
-          <p class="industry__text text-white text-[14px] leading-[22px] font-bold mb-[50px]">Our products have become
+          <p class="industry__text text-white text-[14px] leading-[22px] font-bold mb-[30px] lg:mb-[50px]">Our products have become
             the
             trusted choice
             for
@@ -18,8 +22,8 @@
             and
             process solutions are engineered to deliver the results you need.</p>
 
-          <div class="industry__list flex gap-x-[10px]">
-            <ul class="industry__col w-full flex flex-col gap-y-[30px]">
+          <div class="industry__list max-[460px]:flex-col gap-y-[20px] flex gap-x-[10px]">
+            <ul class="industry__col w-full flex flex-col gap-y-[20px] lg:gap-y-[30px]">
               <li class="industry__list-item flex gap-x-[16px]">
                 <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512">
                   <path fill="currentColor"
@@ -62,7 +66,7 @@
                 <p class="text-[14px] font-bold text-white">Water & Waste Management</p>
               </li>
             </ul>
-            <ul class="industry__col w-full flex flex-col gap-y-[30px]">
+            <ul class="industry__col w-full flex flex-col gap-y-[20px] lg:gap-y-[30px]">
               <li class="industry__list-item flex gap-x-[16px]">
                 <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512">
                   <path fill="currentColor"

@@ -1,27 +1,32 @@
 <!doctype html>
 <html lang="en">
-@@include("components/head.html", { "title": "Gulp-template" })
+  @@include("components/head.html", { "title": "Prima Steam" })
 
-<body>
-  <!-- @@include("components/preloader.html") -->
+  <body>
+    <!-- @@include("components/preloader.html") -->
 
-  <div class="wrapper">
-    <div class="content">
-      @@include("components/fixed-buttons.html")
-      @@include("components/header.html")
-      <main class="page">
-        @@include("components/banner.html")
-        @@include("components/catalog.html")
-        @@include("components/responsibility.html")
-        @@include("components/products.html")
-        @@include("components/industry.html")
-        @@include("components/brand.html")
-      </main>
+    <div class="wrapper">
+      <div class="content">
+        @@include("components/fixed-buttons.html")
+        <!--  -->
+        @@include("components/header.html")
+        <main class="page">
+          @@include("components/banner.html")
+          <!--  -->
+          @@include("components/catalog.html")
+          <!--  -->
+          @@include("components/responsibility.html")
+          <!--  -->
+          @@include("components/products.html")
+          <!--  -->
+          @@include("components/industry.html")
+          <!--  -->
+          @@include("components/brand.html")
+        </main>
+      </div>
+      @@include("components/footer.html")
     </div>
-    @@include("components/footer.html")
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/script.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

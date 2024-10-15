@@ -3,9 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="css/style.css" />
@@ -29,24 +27,61 @@
         padding: 0 10px;
         max-width: 1300px;
       }
+      .container-none {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+      }
       @media (any-hover: hover) {
         .hover-transition {
           cursor: pointer;
           transition: all 0.3s ease 0s;
         }
       }
-      .title{
+      .title {
         font-size: 20px;
+        line-height: 22px;
         font-weight: bold;
       }
-      .block-title{
+      @media (max-width: 768px) {
+        .title {
+          line-height: 18px;
+          font-size: 20px;
+        }
+      }
+      .block-title {
+        line-height: 38px;
         font-size: 36px;
         font-weight: bold;
       }
-      .swiper-pagination-bullet{
+      @media (max-width: 1200px) {
+        .block-title {
+          line-height: 34px;
+          font-size: 32px;
+        }
+      }
+      @media (max-width: 992px) {
+        .block-title {
+          line-height: 30px;
+          font-size: 28px;
+        }
+      }
+      @media (max-width: 768px) {
+        .block-title {
+          line-height: 26px;
+          font-size: 24px;
+        }
+      }
+      @media (max-width: 640px) {
+        .block-title {
+          line-height: 22px;
+          font-size: 20px;
+        }
+      }
+      .swiper-pagination-bullet {
         background-color: var(--gray-300);
       }
-      .swiper-pagination-bullet-active{
+      .swiper-pagination-bullet-active {
         background-color: var(--gray-400);
       }
     }

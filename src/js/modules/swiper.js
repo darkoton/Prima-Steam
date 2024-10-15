@@ -1,6 +1,6 @@
 new Swiper('.catalog__slider', {
-  slidesPerView: 3,
-  spaceBetween: 50,
+  slidesPerView: 1,
+  spaceBetween: 10,
   grabCursor: true,
   loop: true,
   speed: 1000,
@@ -17,13 +17,24 @@ new Swiper('.catalog__slider', {
   },
 
   breakpoints: {
-    767.8: {},
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
   },
 });
 
 new Swiper('.products__slider', {
-  slidesPerView: 4.3,
-  spaceBetween: 30,
+  slidesPerView: 1.1,
+  spaceBetween: 5,
   grabCursor: true,
   loop: true,
   pagination: {
@@ -41,6 +52,21 @@ new Swiper('.products__slider', {
   },
 
   breakpoints: {
-    767.8: {},
+    560: {
+      slidesPerView: 2.1,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 2.1,
+      spaceBetween: 10,
+    },
+    992: {
+      slidesPerView: 3.3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4.3,
+      spaceBetween: 30,
+    },
   },
 });

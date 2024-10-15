@@ -3,7 +3,7 @@ const spollersArray = document.querySelectorAll('[data-spollers]');
 if (spollersArray.length > 0) {
   // Получение обычных спойлеров
   const spollersRegular = Array.from(spollersArray).filter(function (item, index, self) {
-    return !item.dataset.spollers.split(",")[0];
+    return !item.dataset.spollers.split(',')[0];
   });
   // Инициализация обычных спойлеров
   if (spollersRegular.length > 0) {
@@ -12,7 +12,7 @@ if (spollersArray.length > 0) {
 
   // Получение спойлеров с медиа запросами
   const spollersMedia = Array.from(spollersArray).filter(function (item, index, self) {
-    return item.dataset.spollers.split(",")[0];
+    return item.dataset.spollers.split(',')[0];
   });
 
   // Инициализация спойлеров с медиа запросами
@@ -21,16 +21,16 @@ if (spollersArray.length > 0) {
     spollersMedia.forEach(item => {
       const params = item.dataset.spollers;
       const breakpoint = {};
-      const paramsArray = params.split(",");
+      const paramsArray = params.split(',');
       breakpoint.value = paramsArray[0];
-      breakpoint.type = paramsArray[1] ? paramsArray[1].trim() : "max";
+      breakpoint.type = paramsArray[1] ? paramsArray[1].trim() : 'max';
       breakpoint.item = item;
       breakpointsArray.push(breakpoint);
     });
 
     // Получаем уникальные брейкпоинты
     let mediaQueries = breakpointsArray.map(function (item) {
-      return '(' + item.type + "-width: " + item.value + "px)," + item.value + ',' + item.type;
+      return '(' + item.type + '-width: ' + item.value + 'px),' + item.value + ',' + item.type;
     });
     mediaQueries = mediaQueries.filter(function (item, index, self) {
       return self.indexOf(item) === index;
@@ -38,7 +38,7 @@ if (spollersArray.length > 0) {
 
     // Работаем с каждым брейкпоинтом
     mediaQueries.forEach(breakpoint => {
-      const paramsArray = breakpoint.split(",");
+      const paramsArray = breakpoint.split(',');
       const mediaBreakpoint = paramsArray[1];
       const mediaType = paramsArray[2];
       const matchMedia = window.matchMedia(paramsArray[0]);
@@ -63,11 +63,11 @@ if (spollersArray.length > 0) {
       if (matchMedia.matches || !matchMedia) {
         spollersBlock.classList.add('_init');
         initSpollerBody(spollersBlock);
-        spollersBlock.addEventListener("click", setSpollerAction);
+        spollersBlock.addEventListener('click', setSpollerAction);
       } else {
         spollersBlock.classList.remove('_init');
         initSpollerBody(spollersBlock, false);
-        spollersBlock.removeEventListener("click", setSpollerAction);
+        spollersBlock.removeEventListener('click', setSpollerAction);
       }
     });
   }
@@ -99,6 +99,7 @@ if (spollersArray.length > 0) {
           hideSpollersBody(spollersBlock);
         }
         spollerTitle.classList.toggle('_active');
+        spollerTitle.querySelector('svg').classList.toggle('-scale-y-100');
         _slideToggle(spollerTitle.nextElementSibling, 500);
       }
       e.preventDefault();
@@ -108,6 +109,8 @@ if (spollersArray.length > 0) {
     const spollerActiveTitle = spollersBlock.querySelector('[data-spoller]._active');
     if (spollerActiveTitle) {
       spollerActiveTitle.classList.remove('_active');
+      spollerActiveTitle.querySelector('svg').classList.remove('-scale-y-100');
+
       _slideUp(spollerActiveTitle.nextElementSibling, 500);
     }
   }
@@ -139,7 +142,7 @@ let _slideUp = (target, duration = 500) => {
       target.classList.remove('_slide');
     }, duration);
   }
-}
+};
 let _slideDown = (target, duration = 500) => {
   if (!target.classList.contains('_slide')) {
     target.classList.add('_slide');
@@ -154,7 +157,7 @@ let _slideDown = (target, duration = 500) => {
     target.style.marginTop = 0;
     target.style.marginBottom = 0;
     target.offsetHeight;
-    target.style.transitionProperty = "height, margin, padding";
+    target.style.transitionProperty = 'height, margin, padding';
     target.style.transitionDuration = duration + 'ms';
     target.style.height = height + 'px';
     target.style.removeProperty('padding-top');
@@ -169,11 +172,11 @@ let _slideDown = (target, duration = 500) => {
       target.classList.remove('_slide');
     }, duration);
   }
-}
+};
 let _slideToggle = (target, duration = 500) => {
   if (target.hidden) {
     return _slideDown(target, duration);
   } else {
     return _slideUp(target, duration);
   }
-}
+};
