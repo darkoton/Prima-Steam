@@ -7,5 +7,5 @@ const buildFolder = "./dist";
 export const path = {
   rootFolder: rootFolder,
   srcFolder: srcFolder,
-  buildFolder: buildFolder
+  buildFolder: buildFolder,
 }
