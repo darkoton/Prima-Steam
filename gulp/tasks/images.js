@@ -7,7 +7,7 @@ export const images = () => {
       message: "Error: <%= error.message %>"
     })))
     .pipe(app.plugins.newer(`${app.path.buildFolder}/img/`))
-    .pipe(webp())
+    // .pipe(webp())
     .pipe(app.gulp.dest(`${app.path.buildFolder}/img/`))
     .pipe(app.gulp.src(`${app.path.srcFolder}/img/**/*.{jpg,png,jpeg,gif,webp,svg}`))
     .pipe(app.plugins.newer(`${app.path.buildFolder}/img/`))
