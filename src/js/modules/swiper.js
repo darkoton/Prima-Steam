@@ -25,7 +25,7 @@ new Swiper('.catalog__slider', {
       slidesPerView: 2,
       spaceBetween: 30,
     },
-    992: {
+    1024: {
       slidesPerView: 3,
       spaceBetween: 50,
     },
@@ -60,7 +60,7 @@ new Swiper('.products__slider', {
       slidesPerView: 2.1,
       spaceBetween: 10,
     },
-    992: {
+    1024: {
       slidesPerView: 3.3,
       spaceBetween: 20,
     },

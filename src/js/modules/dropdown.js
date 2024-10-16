@@ -1,14 +1,8 @@
-import style from './style.js';
-
 const dropdowns = Array.from(document.querySelectorAll('.header__nav-dropdown'));
 
-const activeList = {
-  zIndex: 5,
-  opacity: 1,
-};
-const activeIcon = {
-  transform: 'scaleY(-1)',
-};
+const activeList = ['!z-[5]', '!opacity-100'];
+
+const activeIcon = ['!-scale-y-100'];
 
 const dropdownsData = dropdowns.map(dropdown => {
   const button = dropdown.querySelector('.dropdown-button');
@@ -26,13 +20,14 @@ const dropdownsData = dropdowns.map(dropdown => {
 dropdownsData.forEach(data => {
   data.button.addEventListener('click', () => {
     dropdownsData.forEach(d => {
-      if (d.dropdown == data.dropdown || d.dropdown == data.dropdown.closest('.header__nav-dropdown.active')) {
+      if (d.dropdown == data.dropdown || d.dropdown == data.dropdown.closest('.header__nav-dropdown.active') || d.dropdown.closest('.header__nav-dropdown.active') == data.dropdown.closest('.header__nav-dropdown.active')) {
         return;
       }
       d.dropdown.classList.remove('active');
-      style(d.list, '', { ...activeList, left: 'auto', right: 0 }, 'remove');
+      activeList.forEach(cl => d.list.classList.remove(cl));
+
       if (d.icon) {
-        style(d.icon, '', activeIcon, 'remove');
+        activeIcon.forEach(cl => d.icon.classList.remove(cl));
       }
     });
 
@@ -45,16 +40,16 @@ dropdownsData.forEach(data => {
 
     if (isOverflowing) {
       if (data.dropdown != data.dropdown.offsetParent.closest('.header__nav-dropdown') && data.dropdown.offsetParent.closest('.header__nav-dropdown')) {
-        style(data.list, '', { ...activeList, left: 'auto', right: '100%' });
+        [...activeList, '!left-auto', '!right-full'].forEach(cl => data.list.classList.toggle(cl));
       } else {
-        style(data.list, '', { ...activeList, left: 'auto', right: 0 });
+        [...activeList, '!left-auto', '!right-0'].forEach(cl => data.list.classList.toggle(cl));
       }
     } else {
-      style(data.list, '', activeList);
+      activeList.forEach(cl => data.list.classList.toggle(cl));
     }
 
     if (data.icon) {
-      style(data.icon, '', activeIcon);
+      activeIcon.forEach(cl => data.icon.classList.toggle(cl));
     }
   });
 
@@ -72,9 +67,10 @@ window.addEventListener('click', ({ target }) => {
   } else {
     dropdownsData.forEach(d => {
       d.dropdown.classList.remove('active');
-      style(d.list, '', activeList, 'remove');
+      activeList.forEach(cl => d.list.classList.remove(cl));
+
       if (d.icon) {
-        style(d.icon, '', activeIcon, 'remove');
+        activeIcon.forEach(cl => d.icon.classList.remove(cl));
       }
     });
   }
