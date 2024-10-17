@@ -18,11 +18,12 @@ const dropdownsData = dropdowns.map(dropdown => {
 });
 
 dropdownsData.forEach(data => {
-  data.button.addEventListener('mouseenter', () => {
+  data.button.addEventListener('mouseover', () => {
     // dropdownsData.forEach(d => {
     //   if (d.dropdown == data.dropdown || d.dropdown == data.dropdown.closest('.header__nav-dropdown.active') || d.dropdown.closest('.header__nav-dropdown.active') == data.dropdown.closest('.header__nav-dropdown.active')) {
     //     return;
     //   }
+
     //   d.dropdown.classList.remove('active');
     //   activeList.forEach(cl => d.list.classList.remove(cl));
 
@@ -45,23 +46,31 @@ dropdownsData.forEach(data => {
         [...activeList, '!left-auto', '!right-0'].forEach(cl => data.list.classList.add(cl));
       }
     } else {
+      console.log(data.list);
       activeList.forEach(cl => data.list.classList.add(cl));
     }
-    data.list.classList.remove('pointer-events-none');
 
     if (data.icon) {
       activeIcon.forEach(cl => data.icon.classList.add(cl));
     }
   });
 
-  data.dropdown.addEventListener('mouseleave', () => {
-    data.dropdown.classList.remove('active');
-    data.list.classList.add('pointer-events-none');
+  let timeout = null;
 
-    activeList.forEach(cl => data.list.classList.remove(cl));
-    if (data.icon) {
-      activeIcon.forEach(cl => data.icon.classList.remove(cl));
+  data.dropdown.addEventListener('mouseout', ({ target }) => {
+    if (timeout) {
+      clearTimeout(timeout);
     }
+
+    timeout = setTimeout(() => {
+      dropdownsData.forEach(d => {
+        d.dropdown.classList.remove('active');
+        activeList.forEach(cl => d.list.classList.remove(cl));
+        if (d.icon) {
+          activeIcon.forEach(cl => d.icon.classList.remove(cl));
+        }
+      });
+    }, 500);
   });
 });
 
