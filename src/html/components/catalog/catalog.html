@@ -1,245 +1,255 @@
-<section class="catalog">
+<section class="catalog mb-[50px]">
   <div class="catalog__wrapper">
     <div class="catalog__container container">
       <div class="catalog__body">
         <span class="catalog__result font-bold text-[12px] mb-[15px]"> We found <span class="text-turquoise-normal">3 products</span></span>
-        <h2 class="catalog__title font-bold text-[40px] mb-[30px]">Thermodynamic steam traps</h2>
+        <h2 class="catalog__title font-bold text-[26px] leading-[28px] md:text-[30px] md:leading-[32px] lg:text-[35px] lg:leading-[37px] xl:text-[40px] xl:leading-[42px] mb-[30px]">Thermodynamic steam traps</h2>
         <div class="catalog__main flex gap-y-[15px] gap-x-[40px] pt-[20px] border-t-[1px] border-gray-300">
-          <div class="catalog__filter w-full max-w-[230px] flex flex-col gap-y-[25px]" data-spollers>
-            <h4 class="catalog__filter-title text-[24px] font-bold">Refine</h4>
+          <div id="filter-menu-backward" class="lg:hidden w-full h-full transition-opacity fixed bg-black/50 top-0 -left-full z-10 opacity-0"></div>
+          <div class="catalog__filter z-10 top-0 -left-full transition-all h-full px-[10px] py-[30px] lg:p-0 fixed lg:static bg-white w-full max-w-[270px] xl:max-w-[230px] flex flex-col" data-spollers>
+            <div class="flex flex-col gap-y-[25px] flex-auto">
+              <h4 class="catalog__filter-title text-[24px] font-bold">Refine</h4>
 
-            <div class="catalog__filter-spoller">
-              <button class="text-left w-full pb-[10px] flex gap-x-[10px] items-center justify-between _active" data-spoller>
-                <span class="font-bold text-[14px]">Brand</span>
-                <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 8.5L8 2L15 8.5" stroke="black" stroke-width="2" />
-                </svg>
-              </button>
+              <div class="catalog__filter-spoller">
+                <button class="text-left w-full pb-[10px] flex gap-x-[10px] items-center justify-between _active" data-spoller>
+                  <span class="font-bold text-[14px]">Brand</span>
+                  <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8.5L8 2L15 8.5" stroke="black" stroke-width="2" />
+                  </svg>
+                </button>
 
-              <div>
-                <ul class="py-[10px] border-t-[1px] border-black flex flex-col gap-y-[10px]">
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="valsteam" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label for="valsteam" class="text-[15px]">Valsteam ADCA <span class="text-gray-500">(2)</span></label>
-                  </li>
-                </ul>
+                <div>
+                  <ul class="py-[10px] border-t-[1px] border-black flex flex-col gap-y-[10px]">
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="valsteam" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label for="valsteam" class="text-[15px]">Valsteam ADCA <span class="text-gray-500">(2)</span></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__filter-spoller">
+                <button class="text-left w-full pb-[10px] flex gap-x-[10px] items-center justify-between _active" data-spoller>
+                  <span class="font-bold text-[14px]">Material</span>
+                  <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8.5L8 2L15 8.5" stroke="black" stroke-width="2" />
+                  </svg>
+                </button>
+
+                <div>
+                  <ul class="py-[10px] border-t-[1px] border-black flex flex-col gap-y-[10px]">
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="carbon" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label for="carbon" class="text-[15px]">Carbon Steel <span class="text-gray-500">(12)</span></label>
+                    </li>
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="iron" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label id="iron" class="text-[15px]">Cast Iron <span class="text-gray-500">(9)</span></label>
+                    </li>
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="ductile" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label id="ductile" class="text-[15px]">Ductile Iron <span class="text-gray-500">(12)</span></label>
+                    </li>
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="forge" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <span id="forge" class="text-[15px]">Forged Steel <span class="text-gray-500">(12)</span></span>
+                    </li>
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="stainless" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label for="stainless" class="text-[15px]">Stainless Steel <span class="text-gray-500">(5)</span></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__filter-spoller">
+                <button class="text-left w-full pb-[10px] flex gap-x-[10px] items-center justify-between _active" data-spoller>
+                  <span class="font-bold text-[14px]">Connections</span>
+                  <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8.5L8 2L15 8.5" stroke="black" stroke-width="2" />
+                  </svg>
+                </button>
+
+                <div>
+                  <ul class="py-[10px] border-t-[1px] border-black flex flex-col gap-y-[10px]">
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="flanged" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label for="flanged" class="text-[15px]">Flanged <span class="text-gray-500">(1)</span></label>
+                    </li>
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="socket" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label for="socket" class="text-[15px]">Socket weld <span class="text-gray-500">(5)</span></label>
+                    </li>
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="threaded" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label for="threaded" class="text-[15px]">Female threaded <span class="text-gray-500">(6)</span></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__filter-spoller">
+                <button class="text-left w-full pb-[10px] flex gap-x-[10px] items-center justify-between _active" data-spoller>
+                  <span class="font-bold text-[14px]">Max. operating temperature</span>
+                  <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8.5L8 2L15 8.5" stroke="black" stroke-width="2" />
+                  </svg>
+                </button>
+
+                <div>
+                  <ul class="py-[10px] border-t-[1px] border-black flex flex-col gap-y-[10px]">
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="300" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label for="300" class="text-[15px]">300℃ <span class="text-gray-500">(9)</span></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__filter-spoller">
+                <button class="text-left w-full pb-[10px] flex gap-x-[10px] items-center justify-between _active" data-spoller>
+                  <span class="font-bold text-[14px]">Max. operating pressure</span>
+                  <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8.5L8 2L15 8.5" stroke="black" stroke-width="2" />
+                  </svg>
+                </button>
+
+                <div>
+                  <ul class="py-[10px] border-t-[1px] border-black flex flex-col gap-y-[10px]">
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="40" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label for="40" class="text-[15px]">40 bar <span class="text-gray-500">(1)</span></label>
+                    </li>
+                    <li class="flex items-center gap-x-[12px]">
+                      <div class="inline-flex items-center">
+                        <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="42" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <label for="42" class="text-[15px]">42 <span class="text-gray-500">(1)</span></label>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
-            <div class="catalog__filter-spoller">
-              <button class="text-left w-full pb-[10px] flex gap-x-[10px] items-center justify-between _active" data-spoller>
-                <span class="font-bold text-[14px]">Material</span>
-                <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 8.5L8 2L15 8.5" stroke="black" stroke-width="2" />
-                </svg>
-              </button>
-
-              <div>
-                <ul class="py-[10px] border-t-[1px] border-black flex flex-col gap-y-[10px]">
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="carbon" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label for="carbon" class="text-[15px]">Carbon Steel <span class="text-gray-500">(12)</span></label>
-                  </li>
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="iron" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label id="iron" class="text-[15px]">Cast Iron <span class="text-gray-500">(9)</span></label>
-                  </li>
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="ductile" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label id="ductile" class="text-[15px]">Ductile Iron <span class="text-gray-500">(12)</span></label>
-                  </li>
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="forge" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <span id="forge" class="text-[15px]">Forged Steel <span class="text-gray-500">(12)</span></span>
-                  </li>
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="stainless" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label for="stainless" class="text-[15px]">Stainless Steel <span class="text-gray-500">(5)</span></label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="catalog__filter-spoller">
-              <button class="text-left w-full pb-[10px] flex gap-x-[10px] items-center justify-between _active" data-spoller>
-                <span class="font-bold text-[14px]">Connections</span>
-                <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 8.5L8 2L15 8.5" stroke="black" stroke-width="2" />
-                </svg>
-              </button>
-
-              <div>
-                <ul class="py-[10px] border-t-[1px] border-black flex flex-col gap-y-[10px]">
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="flanged" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label for="flanged" class="text-[15px]">Flanged <span class="text-gray-500">(1)</span></label>
-                  </li>
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="socket" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label for="socket" class="text-[15px]">Socket weld <span class="text-gray-500">(5)</span></label>
-                  </li>
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="threaded" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label for="threaded" class="text-[15px]">Female threaded <span class="text-gray-500">(6)</span></label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="catalog__filter-spoller">
-              <button class="text-left w-full pb-[10px] flex gap-x-[10px] items-center justify-between _active" data-spoller>
-                <span class="font-bold text-[14px]">Max. operating temperature</span>
-                <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 8.5L8 2L15 8.5" stroke="black" stroke-width="2" />
-                </svg>
-              </button>
-
-              <div>
-                <ul class="py-[10px] border-t-[1px] border-black flex flex-col gap-y-[10px]">
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="300" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label for="300" class="text-[15px]">300℃ <span class="text-gray-500">(9)</span></label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="catalog__filter-spoller">
-              <button class="text-left w-full pb-[10px] flex gap-x-[10px] items-center justify-between _active" data-spoller>
-                <span class="font-bold text-[14px]">Max. operating pressure</span>
-                <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 8.5L8 2L15 8.5" stroke="black" stroke-width="2" />
-                </svg>
-              </button>
-
-              <div>
-                <ul class="py-[10px] border-t-[1px] border-black flex flex-col gap-y-[10px]">
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="40" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label for="40" class="text-[15px]">40 bar <span class="text-gray-500">(1)</span></label>
-                  </li>
-                  <li class="flex items-center gap-x-[12px]">
-                    <div class="inline-flex items-center">
-                      <label class="flex items-center cursor-pointer relative">
-                        <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="42" />
-                        <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                          </svg>
-                        </span>
-                      </label>
-                    </div>
-                    <label for="42" class="text-[15px]">42 <span class="text-gray-500">(1)</span></label>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <button id="filter-back" class="lg:hidden px-[10px] text-center rounded-[6px] text-[18px] hover py-[6px] border-[1px] border-gray-400 hover-transition bg-[#F0F0F0] hover:bg-[#F9F9F9]">Back</button>
           </div>
 
           <div class="catalog__result w-full">
-            <div class="catalog__result-head flex justify-between items-center">
-              <span class="text-[12px]">Show 1 - 2 of 183 products</span>
+            <div class="catalog__result-head flex gap-[10px] flex-col sm:flex-row justify-between items-start sm:items-center">
+              <button id="filter-menu" class="flex lg:hidden text-white font-bold text-[14px] leading-[16px] items-center gap-x-[10px] rounded-[5px] p-[8px_20px] justify-center hover-transition bg-blue-normal hover:bg-blue-hover active:bg-blue-active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20"><path fill="currentColor" d="M15 19.88c.04.3-.06.62-.29.83a.996.996 0 0 1-1.41 0L9.29 16.7a.99.99 0 0 1-.29-.83v-5.12L4.21 4.62a1 1 0 0 1 .17-1.4c.19-.14.4-.22.62-.22h14c.22 0 .43.08.62.22a1 1 0 0 1 .17 1.4L15 10.75zM7.04 5L11 10.06v5.52l2 2v-7.53L16.96 5z" /></svg>
 
-              <div class="flex items-center gap-x-[30px]">
+                Filter
+              </button>
+              <span class="hidden md:inline text-[12px]">Show 1 - 2 of 183 products</span>
+
+              <div class="flex flex-wrap items-center gap-y-[10px] gap-x-[30px]">
                 <div class="flex items-center">
                   <span class="text-[12px] mr-[10px]">Show:</span>
 
@@ -283,7 +293,7 @@
             </div>
 
             <ul class="catalog__result-list flex flex-col gap-y-[10px] mt-[20px]">
-              <li class="flex flex-col lg:flex-row gap-x-[30px] gap-y-[15px] bg-[#F8F8F8] p-[25px_35px]">
+              <li class="flex flex-col lg:flex-row gap-x-[30px] gap-y-[15px] bg-[#F8F8F8] sm:*:p-[25px_35px]">
                 <div class="flex flex-col items-center gap-y-[10px]">
                   <h4 class="text-[16px] mb-[10px] text-gray-500">Valsteam ADCA</h4>
                   <img class="w-full max-w-[200px]" src="./img/products/1.png" alt="" />

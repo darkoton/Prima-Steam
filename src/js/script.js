@@ -16,3 +16,5 @@ import './modules/dropdown.js'; // DROPDOWN
 import './modules/quantity.js'; // QUANTITY
 
 import './modules/select.js'; // SELECT
+
+import './modules/filter_menu.js'; // FILTER MENU
