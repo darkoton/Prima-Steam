@@ -8,6 +8,12 @@ const openMenu = () => {
   ['-left-full', 'left-0', 'opacity-0', 'opacity-100'].forEach(cl => backward.classList.toggle(cl));
 };
 
-buttonBack.addEventListener('click', openMenu);
-button.addEventListener('click', openMenu);
-backward.addEventListener('click', openMenu);
+if (buttonBack) {
+  buttonBack.addEventListener('click', openMenu);
+}
+if (button) {
+  button.addEventListener('click', openMenu);
+}
+if (backward) {
+  backward.addEventListener('click', openMenu);
+}
