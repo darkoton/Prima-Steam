@@ -12,3 +12,5 @@ import './modules/swiper.js'; // SLIDER SWIPER
 import './modules/burger.js'; // BURGER MENU
 
 import './modules/dropdown.js'; // DROPDOWN
+
+import './modules/quantity.js'; // QUANTITY

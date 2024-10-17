@@ -1,0 +1,118 @@
+<div class="buy my-[30px]">
+  <div class="buy__wrapper">
+    <div class="buy__container container">
+      <div class="buy__body flex flex-col lg:flex-row gap-[20px] justify-between">
+        <form class="buy__form w-full lg:max-w-[700px] flex flex-col gap-y-[10px]" action="#">
+          <input type="text" class="px-[12px] py-[6px] text-[14px] md:text-[16px] border-[1px] border-turquoise-normal rounded-[5px]" placeholder="How can we contact you" />
+          <input type="text" class="px-[12px] py-[6px] text-[14px] md:text-[16px] border-[1px] border-turquoise-normal rounded-[5px]" placeholder="Phone" />
+          <input type="text" class="px-[12px] py-[6px] text-[14px] md:text-[16px] border-[1px] border-turquoise-normal rounded-[5px]" placeholder="Email" />
+          <input type="text" class="px-[12px] py-[6px] text-[14px] md:text-[16px] border-[1px] border-turquoise-normal rounded-[5px]" placeholder="Company name" />
+          <input type="text" class="px-[12px] py-[6px] text-[14px] md:text-[16px] border-[1px] border-turquoise-normal rounded-[5px]" placeholder="City" />
+          <input type="text" class="px-[12px] py-[6px] text-[14px] md:text-[16px] border-[1px] border-turquoise-normal rounded-[5px]" placeholder="Request Subject" />
+          <textarea type="text" class="px-[12px] py-[6px] text-[14px] md:text-[16px] border-[1px] border-turquoise-normal rounded-[5px] resize-y" placeholder="Request Text" rows="6"></textarea>
+
+          <div class="flex flex-col items-start gap-y-[8px] md:gap-y-[20px] px-[12px] py-[12px] text-[14px] md:text-[16px] border-[1px] border-turquoise-normal rounded-[5px]">
+            <h5 class="text-[16px] md:text-[18px]">Attach details</h5>
+
+            <p class="text-red-normal text-[14px]">You can add up to 5 files, the size of each in no more than 10MB</p>
+
+            <label for="file" class="inline-block px-[8px] py-[6px] rounded-[10px] border-[1px] border-black hover-transition hover:bg-black hover:text-white">+ Select a file</label>
+            <input id="file" type="file" class="hidden" />
+          </div>
+
+          <div class="w-full md:max-w-[60%] px-[4px]">
+            <ul class="flex flex-col gap-y-[10px] mb-[15px] border-t-[1px] border-gray-500 pt-[10px] mt-[20px]">
+              <li>
+                <h5 class="font-bold text-[16px] mb-[5px]">Choose your delivery</h5>
+              </li>
+              <li class="flex items-center gap-x-[12px]">
+                <div class="inline-flex items-center">
+                  <label class="flex items-center cursor-pointer relative">
+                    <input type="checkbox" checked class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="check" />
+                    <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+
+                <span class="text-[15px]">Click and collect</span>
+              </li>
+              <li class="flex items-center gap-x-[12px]">
+                <div class="inline-flex items-center">
+                  <label class="flex items-center cursor-pointer relative">
+                    <input type="checkbox" checked class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="check" />
+                    <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+
+                <span class="text-[15px]">Delivery to customer</span>
+              </li>
+            </ul>
+
+            <div class="flex items-center gap-x-[15px] mb-[15px] w-full md:max-w-[340px] bg-[#FDFAF3] rounded-[15px] px-[10px] py-[15px]">
+              <img src="./img/global/mark-info.png" alt="" />
+              <p class="text-[14px] leading-[16px]">See T&C's for further information about carriage charges</p>
+            </div>
+
+            <ul class="flex flex-col gap-y-[10px] mb-[15px] border-t-[1px] border-gray-500 pt-[10px]">
+              <li>
+                <h5 class="font-bold text-[16px] mb-[5px]">Printed catalogues</h5>
+              </li>
+              <li class="flex items-center gap-x-[12px]">
+                <div class="inline-flex items-center">
+                  <label class="flex items-center cursor-pointer relative">
+                    <input type="checkbox" checked class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="check" />
+                    <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+                <span class="text-[15px]">Receive Prima Steam Catalog (optional)</span>
+              </li>
+            </ul>
+          </div>
+        </form>
+        <div class="buy__result w-full lg:max-w-[460px] flex flex-col gap-y-[10px]">
+          <div class="flex items-center flex-wrap justify-end gap-[10px] mb-[18px]">
+            <button class="px-[12px] py-[6px] text-[14px] font-bold uppercase rounded-[4px] border-[2px] border-red-normal text-red-normal hover-transition hover:text-white active:text-white hover:border-red-hover hover:bg-red-hover active:bg-red-active active:border-red-active">Clear Cart</button>
+            <button class="px-[12px] py-[6px] text-[18px] font-bold uppercase rounded-[4px] border-[2px] border-blue-normal text-blue-normal hover-transition hover:text-white active:text-white hover:border-blue-hover hover:bg-blue-hover active:bg-blue-active active:border-blue-active">Update my list</button>
+          </div>
+
+          <div class="flex items-center gap-x-[10px] py-[10px] border-y-[1px] border-gray-500">
+            <img src="./img/global/mark.png" alt="" />
+
+            <p class="text-[13px]">We are currently having issues with pricing on some of the product pages, prices within the basket are correct and up to date. For further assistance please contact +48 698-908-0423</p>
+          </div>
+
+          <h5 class="font-bold text-[16px] mb-[5px]">Ask for Quote</h5>
+
+          <div class="flex items-center gap-x-[15px] mb-[15px] w-full bg-[#FDFAF3] rounded-[15px] px-[10px] py-[15px]">
+            <img src="./img/global/mark-info.png" alt="" />
+            <p class="text-[14px] leading-[16px]">By submiting Quotation you agreed that Your personal data will be used to process your Quotation Process, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="flex justify-between items-center pb-[10px] border-b-[1px] border-gray-500">
+              <span class="font-bold text-[14px]">Net amount</span>
+              <span class="text-[11px]">€181.28</span>
+            </div>
+            <div class="flex justify-between items-center mt-[10px]">
+              <span class="text-[14px] font-medium uppercase">Order total</span>
+              <span class="text-[13px] font-bold">€181.28</span>
+            </div>
+          </div>
+
+          <button class="w-full py-[10px] text-center font-bold uppercase text-[16px] md:text-[18px] text-white rounded-[5px] hover-transition bg-blue-normal hover:bg-blue-hover active:bg-blue-active">Submit Quatation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

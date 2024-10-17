@@ -19,7 +19,7 @@ import { otfToTtf, ttfToWoff, iconfonts } from './gulp/tasks/fonts.js';
 import { server } from './gulp/tasks/server.js';
 import { minHTML, minCSS, minJS, minImg } from './gulp/tasks/minify.js';
 
-function realodBrowser(){
+function realodBrowser() {
   app.plugins.browsersync.reload()
 }
 
@@ -33,11 +33,12 @@ function watcher() {
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, iconfonts);
 
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, gulp.series(scss, tailwind), js, images));
+const devTasks = gulp.series(fonts, gulp.parallel(copy, html, gulp.series(scss, tailwind), js, images));
+const buildTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
 
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+const dev = gulp.series(reset, devTasks, gulp.parallel(watcher, server));
 
-const build = gulp.series(reset, mainTasks, gulp.parallel(minHTML, minCSS, minJS, minImg));
+const build = gulp.series(reset, buildTasks, gulp.parallel(minHTML, gulp.series(minCSS, tailwind), minJS, minImg));
 
 gulp.task('dev', dev);
 

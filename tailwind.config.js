@@ -41,6 +41,11 @@ export default {
           hover: 'var(--dark-hover)',
           active: 'var(--dark-active)',
         },
+        red: {
+          normal: 'var(--red)',
+          hover: 'var(--red-hover)',
+          active: 'var(--red-active)',
+        },
       },
     },
   },

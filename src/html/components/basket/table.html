@@ -1,0 +1,112 @@
+<section class="basket">
+  <div class="basket__wrapper">
+    <div class="basket__container container">
+      <div class="basket__body">
+        <h2 class="basket__title text-[30px] font-bold mb-[10px]">Your quatation request</h2>
+
+        <div class="basket__table flex flex-col">
+          <div class="basket__head w-full justify-between hidden lg:flex items-center py-[20px] px-[15px] border-b-[2px] border-black">
+            <span class="basket__head-title inline-block text-[15px] xl:text-[16px] w-6/12 xl:w-7/12">Item</span>
+            <span class="basket__head-title inline-block text-[15px] xl:text-[16px] w-2/12">Price</span>
+            <span class="basket__head-title inline-block text-[15px] xl:text-[16px] w-2/12">Quality</span>
+            <span class="basket__head-title inline-block text-[15px] xl:text-[16px] w-2/12 xl:w-1/12 lg:text-right">Net amount</span>
+          </div>
+          <div class="basket__body flex flex-col bg-[#F8F8F8] gap-y-[30px]">
+            <div class="basket__products grid grid-cols-1 md:grid-cols-2 lg:flex flex-col gap-x-[10px] gap-y-[20px] p-[10px] lg:p-0">
+              <div class="basket__product flex flex-col gap-y-[20px] border-[1px] border-gray-500 lg:border-0">
+                <div class="basket__product-head flex flex-col lg:flex-row px-[25px] gap-x-[15px]">
+                  <div class="basket__product-item lg:w-6/12 xl:w-7/12 flex flex-col lg:flex-row gap-y-[20px] gap-x-[50px] py-[8px] md:py-[15px]">
+                    <img src="./img/products/1.png" alt="" class="basket__img w-full max-w-[200px] h-full object-contain" />
+                    <div class="basket__info">
+                      <h4 class="basket__product-title text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] font-bold mb-[10px]">Thermodynamic steam straps ADCA DT40/2</h4>
+                      <p class="basket__product-ref text-[15px] md:text-[16px] mb-[10px] text-gray-600">REF: A.15.1510.015</p>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">Model: </span>DT40/2</div>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">DN: </span>1/2''</div>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">Material: </span> stailess steel</div>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">Connection: </span>Threaded</div>
+                      <div class="basket__product-avaible flex items-center gap-x-[8px] text-blue-normal before:content-[''] before:bg-blue-normal before:w-[8px] before:h-[8px] before:rounded-full text-[20px] font-bold">Avaible to Order</div>
+                    </div>
+                  </div>
+
+                  <div class="basket__product-price lg:w-2/12 text-[15px] md:text-[16px] text-black py-[8px] md:py-[15px]"><span class="lg:hidden">Price:</span> €90.64</div>
+                  <div class="basket__quantity lg:w-2/12 text-[15px] md:text-[16px] text-black py-[8px] md:py-[15px]">
+                    <div class="basket__counter w-full max-w-[160px] counter border-[1px] rounded-[4px] counter text-[18px] flex justify-between bg-white" data-quantity>
+                      <div class="counter__btn counter__btn_minus _disabled select-none font-bold border-r-[1px] px-[15px] py-[5px] cursor-pointer hover-transition hover:text-blue-hover active:text-blue-active">-</div>
+                      <input type="text" class="counter__input text-center px-[10px] py-[5px] w-full" value="2" readonly />
+                      <div class="counter__btn counter__btn_plus select-none font-bold border-l-[1px] px-[15px] py-[5px] cursor-pointer hover-transition hover:text-blue-hover active:text-blue-active">+</div>
+                    </div>
+                  </div>
+                  <div class="basket__amount lg:w-2/12 xl:w-1/12 py-[8px] md:py-[15px] text-[15px] md:text-[16px] text-black font-bold lg:text-right"><span class="lg:hidden">Net amount:</span> €181.28</div>
+                </div>
+                <div class="basket__bottom flex justify-between px-[10px] py-[6px]">
+                  <button class="basket__edit uppercase font-bold hover-transition text-dark-normal hover:text-dark-hover active:text-dark-active">Modify</button>
+                  <button class="basket__edit uppercase font-bold hover-transition text-red-normal hover:text-red-hover active:text-red-active">Remove Quotation</button>
+                </div>
+              </div>
+              <div class="basket__product flex flex-col gap-y-[20px] border-[1px] border-gray-500 lg:border-0">
+                <div class="basket__product-head flex flex-col lg:flex-row px-[25px] gap-x-[15px]">
+                  <div class="basket__product-item lg:w-6/12 xl:w-7/12 flex flex-col lg:flex-row gap-y-[20px] gap-x-[50px] py-[8px] md:py-[15px]">
+                    <img src="./img/products/1.png" alt="" class="basket__img w-full max-w-[200px] h-full object-contain" />
+                    <div class="basket__info">
+                      <h4 class="basket__product-title text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] font-bold mb-[10px]">Thermodynamic steam straps ADCA DT40/2</h4>
+                      <p class="basket__product-ref text-[15px] md:text-[16px] mb-[10px] text-gray-600">REF: A.15.1510.015</p>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">Model: </span>DT40/2</div>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">DN: </span>1/2''</div>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">Material: </span> stailess steel</div>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">Connection: </span>Threaded</div>
+                      <div class="basket__product-avaible flex items-center gap-x-[8px] text-blue-normal before:content-[''] before:bg-blue-normal before:w-[8px] before:h-[8px] before:rounded-full text-[20px] font-bold">Avaible to Order</div>
+                    </div>
+                  </div>
+
+                  <div class="basket__product-price lg:w-2/12 text-[15px] md:text-[16px] text-black py-[8px] md:py-[15px]"><span class="lg:hidden">Price:</span> €90.64</div>
+                  <div class="basket__quantity lg:w-2/12 text-[15px] md:text-[16px] text-black py-[8px] md:py-[15px]">
+                    <div class="basket__counter w-full max-w-[160px] counter border-[1px] rounded-[4px] counter text-[18px] flex justify-between bg-white" data-quantity>
+                      <div class="counter__btn counter__btn_minus _disabled select-none font-bold border-r-[1px] px-[15px] py-[5px] cursor-pointer hover-transition hover:text-blue-hover active:text-blue-active">-</div>
+                      <input type="text" class="counter__input text-center px-[10px] py-[5px] w-full" value="2" readonly />
+                      <div class="counter__btn counter__btn_plus select-none font-bold border-l-[1px] px-[15px] py-[5px] cursor-pointer hover-transition hover:text-blue-hover active:text-blue-active">+</div>
+                    </div>
+                  </div>
+                  <div class="basket__amount lg:w-2/12 xl:w-1/12 py-[8px] md:py-[15px] text-[15px] md:text-[16px] text-black font-bold lg:text-right"><span class="lg:hidden">Net amount:</span> €181.28</div>
+                </div>
+                <div class="basket__bottom flex justify-between px-[10px] py-[6px]">
+                  <button class="basket__edit uppercase font-bold hover-transition text-dark-normal hover:text-dark-hover active:text-dark-active">Modify</button>
+                  <button class="basket__edit uppercase font-bold hover-transition text-red-normal hover:text-red-hover active:text-red-active">Remove Quotation</button>
+                </div>
+              </div>
+              <div class="basket__product flex flex-col gap-y-[20px] border-[1px] border-gray-500 lg:border-0">
+                <div class="basket__product-head flex flex-col lg:flex-row px-[25px] gap-x-[15px]">
+                  <div class="basket__product-item lg:w-6/12 xl:w-7/12 flex flex-col lg:flex-row gap-y-[20px] gap-x-[50px] py-[8px] md:py-[15px]">
+                    <img src="./img/products/1.png" alt="" class="basket__img w-full max-w-[200px] h-full object-contain" />
+                    <div class="basket__info">
+                      <h4 class="basket__product-title text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] font-bold mb-[10px]">Thermodynamic steam straps ADCA DT40/2</h4>
+                      <p class="basket__product-ref text-[15px] md:text-[16px] mb-[10px] text-gray-600">REF: A.15.1510.015</p>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">Model: </span>DT40/2</div>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">DN: </span>1/2''</div>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">Material: </span> stailess steel</div>
+                      <div class="basket__product-param text-[15px] md:text-[16px] mb-[10px]"><span class="font-medium">Connection: </span>Threaded</div>
+                      <div class="basket__product-avaible flex items-center gap-x-[8px] text-blue-normal before:content-[''] before:bg-blue-normal before:w-[8px] before:h-[8px] before:rounded-full text-[20px] font-bold">Avaible to Order</div>
+                    </div>
+                  </div>
+
+                  <div class="basket__product-price lg:w-2/12 text-[15px] md:text-[16px] text-black py-[8px] md:py-[15px]"><span class="lg:hidden">Price:</span> €90.64</div>
+                  <div class="basket__quantity lg:w-2/12 text-[15px] md:text-[16px] text-black py-[8px] md:py-[15px]">
+                    <div class="basket__counter w-full max-w-[160px] counter border-[1px] rounded-[4px] counter text-[18px] flex justify-between bg-white" data-quantity>
+                      <div class="counter__btn counter__btn_minus _disabled select-none font-bold border-r-[1px] px-[15px] py-[5px] cursor-pointer hover-transition hover:text-blue-hover active:text-blue-active">-</div>
+                      <input type="text" class="counter__input text-center px-[10px] py-[5px] w-full" value="2" readonly />
+                      <div class="counter__btn counter__btn_plus select-none font-bold border-l-[1px] px-[15px] py-[5px] cursor-pointer hover-transition hover:text-blue-hover active:text-blue-active">+</div>
+                    </div>
+                  </div>
+                  <div class="basket__amount lg:w-2/12 xl:w-1/12 py-[8px] md:py-[15px] text-[15px] md:text-[16px] text-black font-bold lg:text-right"><span class="lg:hidden">Net amount:</span> €181.28</div>
+                </div>
+                <div class="basket__bottom flex justify-between px-[10px] py-[6px]">
+                  <button class="basket__edit uppercase font-bold hover-transition text-dark-normal hover:text-dark-hover active:text-dark-active">Modify</button>
+                  <button class="basket__edit uppercase font-bold hover-transition text-red-normal hover:text-red-hover active:text-red-active">Remove Quotation</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

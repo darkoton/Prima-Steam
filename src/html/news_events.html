@@ -1,26 +1,27 @@
 <!doctype html>
 <html lang="en">
-  @@include("components/head.html", { "title": "Prima Steam" })
+@@include("components/head.html", { "title": "Prima Steam" })
 
-  <body>
-    <!-- @@include("components/preloader.html") -->
+<body>
+  <!-- @@include("components/preloader.html") -->
 
-    <div class="wrapper">
-      <div class="content">
-        @@include("components/fixed-buttons.html")
+  <div class="wrapper">
+    <div class="content">
+      @@include("components/fixed-buttons.html")
+      <!--  -->
+      @@include("components/header.html")
+      <!--  -->
+      @@include("components/breadcrumbs.html", {"title": "News & Events"})
+      <main class="page">
+        @@include("components/news_events/banner.html")
         <!--  -->
-        @@include("components/header.html")
-        <!--  -->
-        @@include("components/breadcrumbs.html")
-        <main class="page">
-          @@include("components/news_events/banner.html")
-          <!--  -->
-          @@include("components/news_events/cards.html")
-        </main>
-      </div>
-      @@include("components/footer.html")
+        @@include("components/news_events/cards.html")
+      </main>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
-  </body>
+    @@include("components/footer.html")
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
