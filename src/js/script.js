@@ -9,6 +9,8 @@ import './modules/swiper.js'; // SLIDER SWIPER
 
 // import "./modules/tabs.js"  // TABS
 
+import './modules/popup.js'; // POPUP
+
 import './modules/burger.js'; // BURGER MENU
 
 import './modules/dropdown.js'; // DROPDOWN

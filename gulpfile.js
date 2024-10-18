@@ -27,7 +27,7 @@ function watcher() {
   gulp.watch(`${path.srcFolder}/assets/`, copy);
   gulp.watch(`${path.srcFolder}/html/**/*.html`, gulp.parallel(html, gulp.series(scss, tailwind)))
   gulp.watch(`${path.srcFolder}/scss/**/*.scss`, gulp.series(scss, tailwind)).on('change', realodBrowser)
-  gulp.watch(`${path.srcFolder}/js/**/*.js`, js);
+  gulp.watch(`${path.srcFolder}/js/**/*.js`, gulp.parallel(js, gulp.series(scss, tailwind)));
   gulp.watch(`${path.srcFolder}/img/**/*.{png,jpeg,jpg,gif,webp,svg}`, images);
 }
 
