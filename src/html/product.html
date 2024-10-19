@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  @@include("components/head.html", { "title": "Prima Steam" })
+
+  <body>
+    <!-- @@include("components/preloader.html") -->
+
+    <div class="wrapper">
+      <div class="content">
+        @@include("components/fixed-buttons.html")
+        <!--  -->
+        @@include("components/header.html")
+        <!--  -->
+        @@include("components/breadcrumbs.html", { "path": ["Thermodynamic steam traps", "Thermodynamic steam traps DT40/2"]})
+        <main class="page">
+          <!--  -->
+          @@include("components/product/card.html")
+          <!--  -->
+          @@include("components/product/configuration.html")
+        </main>
+      </div>
+      @@include("components/footer.html")
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

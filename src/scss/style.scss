@@ -41,3 +41,7 @@ body {
 .swiper-pagination-bullet-active {
   background-color: var(--gray-400);
 }
+
+//< " Components " >=============================================================================================================>//
+@import "./components/_card";
+@import "./components/_configuration";

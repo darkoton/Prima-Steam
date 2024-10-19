@@ -1,0 +1,145 @@
+.card {
+  &__gallery-overflow {
+    max-height: 320px;
+    min-height: 100px;
+    overflow: auto;
+    padding-right: 5px;
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+  &__gallery-img {
+    min-width: 100px;
+    border: 1px solid transparent;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    @media (any-hover: hover) {
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        border-color: var(--gray-400);
+      }
+    }
+  }
+  &__gallery-result img {
+    width: 100%;
+
+    @media (max-width: 1024px) {
+      width: 70%;
+    }
+  }
+  &__specifications-table {
+    font-size: 14px;
+    text-align: right;
+  }
+  &__documentation-files {
+    & a {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      line-height: 16px;
+      font-size: 12px;
+      text-decoration: underline;
+      transition: all 0.3s ease;
+      color: var(--turquoise);
+
+      & span {
+        color: rgb(168 85 247);
+        text-decoration: underline;
+      }
+
+      @media (any-hover: hover) {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover,
+        &:hover * {
+          color: var(--turquoise-hover);
+          text-decoration: none;
+        }
+      }
+
+      &:active {
+        color: var(--turquoise-active);
+      }
+    }
+  }
+  &__config-option {
+    width: 100%;
+    max-width: 48%;
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
+  }
+
+  &__config-select {
+    position: relative;
+
+    &::after {
+      content: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5.5L9 1' stroke='black' stroke-width='2' /%3E%3C/svg%3E");
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__config-option {
+    & label {
+      font-size: 16px;
+      margin-bottom: 5px;
+
+      & span {
+        color: var(--red);
+      }
+    }
+
+    & select {
+      padding: 15px 10px;
+      border: 1px solid var(--gray-300);
+      width: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      &::-ms-expand {
+        display: none;
+      }
+    }
+  }
+  &__submit-ref {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    color: var(--gray-300);
+  }
+  &__price-value {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+    color: var(--gray-900);
+
+    & span {
+      font-size: 12px;
+      color: var(--gray-400);
+      font-weight: normal;
+    }
+  }
+  &__price-indicative {
+    font-size: 12px;
+    color: var(--gray-400);
+  }
+}
