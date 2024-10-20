@@ -2,88 +2,91 @@
   <div class="cards__wrapper">
     <div class="cards__container container">
       <div class="cards__body">
-        <div class="cards__main mb-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px]">
-          <div class="cards__card border-[1px] border-gray-200 p-[20px] w-full" data-spollers>
-            <div class="cards__card-top flex flex-col items-center gap-y-[10px] md:block mb-[20px] md:mb-[50px]">
-              <img class="float-end w-full max-w-[50%]" src="./img/catalog/1.png" alt="" />
-              <h3 class="cards__card-title inline-block mb-[15px] md:mb-[35px] text-blue-normal text-[18px] font-bold">Steam traps</h3>
+        <div data-spollers-hidden class="cards__main mb-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+          <div class="cards__card h-auto flex flex-col border-[1px] border-gray-200 p-[20px] w-full">
+            <div class="catalog__card-top flex flex-col items-center gap-y-[10px] md:block mb-[20px] md:mb-[50px]">
+              <a href="#"> <img class="float-end w-full max-w-[49%] object-cover" src="./img/catalog/1.png" alt="" /></a>
+              <h3 class="catalog__card-title inline-block mb-[15px] md:mb-[35px] text-blue-normal text-[18px] font-bold"><a href="#">Steam traps</a></h3>
 
-              <p class="cards__card-text text-[12px] md:text-[14px]">One of the widest ranges of steam traps on the market with standard and custom solutions that guarantee the highest efficiency of your steam system.</p>
+              <p class="catalog__card-text text-[12px] md:text-[14px]">One of the widest ranges of steam traps on the market with standard and custom solutions that guarantee the highest efficiency of your steam system.</p>
             </div>
 
-            <ul class="cards__card-list mb-[25px] flex flex-col gap-y-[8px]">
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Float steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Bimetal steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Thermodynamic steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Thermostatic steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Steam traps for compressed air systems </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Related equipment </a></li>
-            </ul>
+            <div data-parent-hidden class="catalog__card-bottom flex-auto flex flex-col justify-between">
+              <ul data-block-hidden class="catalog__card-list transition-all duration-[400ms] overflow-hidden mb-[25px] flex flex-col gap-y-[8px]">
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Float steam traps </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Bimetal steam traps </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Thermodynamic steam traps </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Thermostatic steam traps </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Steam traps for compressed air systems </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Related equipment </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Related equipment </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Related equipment </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Related equipment </a></li>
+              </ul>
 
-            <div data-spoller class="cards__spoller w-full text-gray-800 cursor-pointer inline-flex items-center justify-between text-[16px] md:text-[20px] font-bold">
-              <span class="inline-flex items-center gap-x-[15px]">
-                View all
+              <div data-spoller-hidden class="catalog__spoller text-gray-800 inline-flex items-center gap-x-[15px] cursor-pointer text-[16px] md:text-[20px] font-bold">
+                <span data-view>View all</span>
+                <span data-collapse>Collapse</span>
                 <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 1L8 8L15 1" stroke="#31473B" stroke-width="2" />
+                  <path d="M1 1L8 8L15 1" stroke="currentColor" stroke-width="2" />
                 </svg>
-              </span>
-
-              <span class="text-[14px] text-gray-400">8 positions</span>
+              </div>
             </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, consequatur!</p>
           </div>
-          <div class="cards__card border-[1px] border-gray-200 p-[20px] w-full" data-spollers>
-            <div class="cards__card-top flex flex-col items-center gap-y-[10px] md:block mb-[20px] md:mb-[50px]">
-              <img class="float-end w-full max-w-[50%]" src="./img/catalog/1.png" alt="" />
-              <h3 class="cards__card-title inline-block mb-[15px] md:mb-[35px] text-blue-normal text-[18px] font-bold">Steam traps</h3>
+          <div class="cards__card h-auto flex flex-col border-[1px] border-gray-200 p-[20px] w-full">
+            <div class="catalog__card-top flex flex-col items-center gap-y-[10px] md:block mb-[20px] md:mb-[50px]">
+              <a href="#"><img class="float-end w-full max-w-[49%] object-cover" src="./img/catalog/2.png" alt="" /></a>
+              <h3 class="catalog__card-title inline-block mb-[15px] md:mb-[35px] text-blue-normal text-[18px] font-bold"><a href="#">Pressure regulators</a></h3>
 
-              <p class="cards__card-text text-[12px] md:text-[14px]">One of the widest ranges of steam traps on the market with standard and custom solutions that guarantee the highest efficiency of your steam system.</p>
+              <p class="catalog__card-text text-[12px] md:text-[14px]">Extensive range of pressure regulators with solutions that cover standard and most demanding pressure control applications with steam, water or other gases and liquids</p>
             </div>
 
-            <ul class="cards__card-list mb-[25px] flex flex-col gap-y-[8px]">
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Float steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Bimetal steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Thermodynamic steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Thermostatic steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Steam traps for compressed air systems </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Related equipment </a></li>
-            </ul>
+            <div data-parent-hidden class="catalog__card-bottom flex-auto flex flex-col justify-between">
+              <ul data-block-hidden class="catalog__card-list transition-all duration-[400ms] overflow-hidden mb-[25px] flex flex-col gap-y-[8px]">
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Pressure reducing valves / Downstream pressure regulators. </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">By-pass valves / Pressure regulators "to yourself" Pressure regulators "to yourself" </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Pressure regulators for blanketing systems Reducing plants </a></li>
+              </ul>
 
-            <div data-spoller class="cards__spoller w-full text-gray-800 cursor-pointer inline-flex items-center gap-x-[15px] text-[16px] md:text-[20px] font-bold">
-              View all
-              <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L8 8L15 1" stroke="#31473B" stroke-width="2" />
-              </svg>
+              <div data-spoller-hidden class="catalog__spoller text-gray-800 inline-flex items-center gap-x-[15px] cursor-pointer text-[16px] md:text-[20px] font-bold">
+                <span data-view>View all</span>
+                <span data-collapse>Collapse</span>
+                <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 1" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
             </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, consequatur!</p>
           </div>
-          <div class="cards__card border-[1px] border-gray-200 p-[20px] w-full" data-spollers>
-            <div class="cards__card-top flex flex-col items-center gap-y-[10px] md:block mb-[20px] md:mb-[50px]">
-              <img class="float-end w-full max-w-[50%]" src="./img/catalog/1.png" alt="" />
-              <h3 class="cards__card-title inline-block mb-[15px] md:mb-[35px] text-blue-normal text-[18px] font-bold">Steam traps</h3>
+          <div class="cards__card h-auto flex flex-col border-[1px] border-gray-200 p-[20px] w-full">
+            <div class="catalog__card-top flex flex-col items-center gap-y-[10px] md:block mb-[20px] md:mb-[50px]">
+              <a href="#"><img class="float-end w-full max-w-[49%] object-cover" src="./img/catalog/3.png" alt="" /></a>
+              <h3 class="catalog__card-title inline-block mb-[15px] md:mb-[35px] text-blue-normal text-[18px] font-bold"><a href="#">Клапани регулюючі</a></h3>
 
-              <p class="cards__card-text text-[12px] md:text-[14px]">One of the widest ranges of steam traps on the market with standard and custom solutions that guarantee the highest efficiency of your steam system.</p>
+              <p class="catalog__card-text text-[12px] md:text-[14px]">Асортимент ADCATrol включає універсальні регулюючі клапани для керування потоком або його відсікання, а також багато моделей клапанів,</p>
             </div>
 
-            <ul class="cards__card-list mb-[25px] flex flex-col gap-y-[8px]">
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Float steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Bimetal steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Thermodynamic steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Thermostatic steam traps </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Steam traps for compressed air systems </a></li>
-              <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Related equipment </a></li>
-            </ul>
+            <div data-parent-hidden class="catalog__card-bottom flex-auto flex flex-col justify-between">
+              <ul data-block-hidden class="catalog__card-list transition-all duration-[400ms] overflow-hidden mb-[25px] flex flex-col gap-y-[8px]">
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Двоходові регулюючі клапани </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Триходові регулюючі клапани </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Запірні клапани </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Регулятори температури прямої дії </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Пневматичні та електричні приводи </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Пневматичні та електричні приводи </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Пневматичні та електричні приводи </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Пневматичні та електричні приводи </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Пневматичні та електричні приводи </a></li>
+                <li><a href="#" class="text-[12px] md:text-[14px] text-turquoise-normal hover-transition hover:text-turquoise-hover active:text-turquoise-active underline">Пневматичні та електричні приводи </a></li>
+              </ul>
 
-            <div data-spoller class="cards__spoller w-full text-gray-800 cursor-pointer inline-flex items-center gap-x-[15px] text-[16px] md:text-[20px] font-bold">
-              View all
-              <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L8 8L15 1" stroke="#31473B" stroke-width="2" />
-              </svg>
+              <div data-spoller-hidden class="catalog__spoller text-gray-800 inline-flex items-center gap-x-[15px] cursor-pointer text-[16px] md:text-[20px] font-bold">
+                <span data-view>View all</span>
+                <span data-collapse>Collapse</span>
+                <svg class="transition-all" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 1" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
             </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, consequatur!</p>
           </div>
         </div>
 

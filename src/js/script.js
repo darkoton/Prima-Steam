@@ -1,6 +1,8 @@
 //< " CONNECTING JS COMPONENTS " >=============================================================================================================>//
 import './modules/spoiler.js'; // SPOILERS
 
+import './modules/spoiler-hidden.js'; // HIDDEN SPOILERS
+
 // import "./modules/scroll_header.js"  // SCROLL HEADER
 
 import './modules/swiper.js'; // SLIDER SWIPER
@@ -20,3 +22,7 @@ import './modules/quantity.js'; // QUANTITY
 import './modules/select.js'; // SELECT
 
 import './modules/filter_menu.js'; // FILTER MENU
+
+import isWebp from './modules/webp.js'; // WEBP
+
+isWebp();

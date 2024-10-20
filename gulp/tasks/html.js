@@ -8,7 +8,7 @@ export const html = () => {
       message: "Error: <%= error.message %>"
     })))
     .pipe(fileinclude())
-    // .pipe(webHtmlNosvg())
+    .pipe(webHtmlNosvg())
     .pipe(app.gulp.dest(`${app.path.buildFolder}/`))
     .pipe(app.plugins.browsersync.stream())
 }

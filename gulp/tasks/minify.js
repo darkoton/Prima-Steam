@@ -22,10 +22,10 @@ export const minHTML = () => {
 export const minCSS = () => {
   return app.gulp.src(`${app.path.buildFolder}/css/*.css`)
     // .pipe(groupCssMediaQueries())
-    // .pipe(webpcss({
-    //   webpClass: ".webp",
-    //   noWebpClass: ".no-webp"
-    // }))
+    .pipe(webpcss({
+      webpClass: ".webp",
+      noWebpClass: ".no-webp"
+    }))
     .pipe(autoPrefixer({
       grid: true,
       overrideBrowserslist: ["last 3 versions"],
