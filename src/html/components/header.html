@@ -10,9 +10,16 @@
         </div>
         <div class="header__main container flex justify-start items-center py-[20px] gap-x-[5px] lg:gap-x-[30px]">
           <a href="./index.html" class="header__logo flex items-center gap-x-[15px]">
-            <img class="w-full hidden lg:block max-w-[240px]" src="./img/global/logo.png" alt="" />
-            <img class="w-full hidden sm:block lg:hidden max-w-[240px]" src="./img/global/logo-small.png" alt="" />
-            <img class="w-full sm:hidden max-w-[80px]" src="./img/global/logo-mob.png" alt="" />
+            <picture>
+              <source media="(max-width: 640px)" srcset="./img/global/logo-mob.png" />
+              <source media="(max-width: 640px)" srcset="./img/global/logo-mob.webp" type="image/webp" />
+              <source media="(min-width: 640px) and (max-width: 1024px)" srcset="./img/global/logo-small.png" />
+              <source media="(min-width: 640px) and (max-width: 1024px)" srcset="./img/global/logo-small.webp" type="image/webp" />
+              <source media="(min-width: 1024px)" srcset="./img/global/logo.png" />
+              <source media="(max-width: 1024px)" srcset="./img/global/logo.webp" type="image/webp" />
+              <source srcset="./img/global/logo.webp" type="image/webp" />
+              <img class="w-full max-w-[240px]" src="./img/global/logo.png" alt="Logo" />
+            </picture>
           </a>
 
           <div class="header__search w-full max-w-full lg:max-w-[315px]">
