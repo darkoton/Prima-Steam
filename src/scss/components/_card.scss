@@ -28,12 +28,16 @@
     padding-top: 5px;
     padding-bottom: 5px;
     overflow: hidden;
+    transition: all 0.3s ease 0s;
+
     @media (any-hover: hover) {
       cursor: pointer;
-      transition: all 0.3s ease 0s;
       &:hover {
         border-color: var(--gray-500);
       }
+    }
+    &._active {
+      border-color: var(--gray-500);
     }
   }
   &__gallery-result img {
@@ -87,17 +91,17 @@
     }
   }
 
-  &__config-select {
-    position: relative;
+  // &__config-select {
+  //   position: relative;
 
-    &::after {
-      content: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5.5L9 1' stroke='black' stroke-width='2' /%3E%3C/svg%3E");
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
+  //   &::after {
+  //     content: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5.5L9 1' stroke='black' stroke-width='2' /%3E%3C/svg%3E");
+  //     position: absolute;
+  //     right: 10px;
+  //     top: 50%;
+  //     transform: translateY(-50%);
+  //   }
+  // }
   &__config-option {
     & label {
       font-size: 16px;

@@ -3,26 +3,28 @@
     <div class="card__container container">
       <div class="card__body flex flex-col lg:flex-row gap-y-[30px] gap-x-[60px] xl:gap-x-[120px]">
         <div class="card__info flex flex-col w-full lg:max-w-[475px]">
-          <div class="card__gallery flex flex-col-reverse lg:flex-row items-start gap-[20px] gap-x-[20px] mb-[20px]">
-            <div class="card__gallery-overflow w-full max-w-[130px]">
+          <div data-gallery class="card__gallery flex flex-col-reverse lg:flex-row items-start gap-[20px] gap-x-[20px] mb-[20px]">
+            <div class="card__gallery-overflow w-full lg:max-w-[130px]">
               <ul class="card__gallery-list flex flex-row lg:flex-col items-center gap-[30px]">
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/1.png" alt="" /></li>
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
-                <li class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/1.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
+                <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
               </ul>
             </div>
-            <div class="card__gallery-result w-full flex flex-col items-center bg-[#F9F9F9] rounded-[10px] pt-[10px] text-center text-[20px] text-gray-600">
+            <div class="card__gallery-result relative w-full flex flex-col items-center bg-[#F9F9F9] rounded-[10px] pt-[10px] text-center text-[20px] text-gray-600">
               <h5>Valesteam ADCA</h5>
 
-              <img src="./img/product/1.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
+              <svg data-gallery-left-button class="absolute lg:hidden top-1/2 -translate-y-1/2 left-0 z-10" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="currentColor" d="m8.5 12.8l5.7 5.6c.4.4 1 .4 1.4 0s.4-1 0-1.4l-4.9-5l4.9-5c.4-.4.4-1 0-1.4c-.2-.2-.4-.3-.7-.3s-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6q0-.15 0 0" /></svg>
+              <svg data-gallery-right-button class="absolute lg:hidden top-1/2 -translate-y-1/2 right-0 z-10" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="currentColor" d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0a1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41a1 1 0 0 0 .71.3a1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47" /></svg>
+              <img data-gallery-result src="./img/product/1.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
             </div>
           </div>
           <div class="card__specifications mb-[20px]">
@@ -76,7 +78,25 @@
             <div class="card__config flex flex-wrap justify-between gap-y-[20px] gap-x-[10px] mb-[20px]">
               <div class="card__config-option flex flex-col gap-y-[5px]">
                 <label>Delta P (bar) <span>*</span></label>
-                <div class="card__config-select">
+
+                <div class="card__config-select select text-[12px]">
+                  <span class="select-button bg-[#F8F8F8] w-full border-[1px] border-turquoise-normal rounded-[4px] cursor-pointer px-[20px] py-[10px] gap-x-[40px] flex items-center justify-between">
+                    <span class="select-value"> Choose on Option... </span>
+
+                    <svg class="transition-all" width="14" height="8" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L8 8L15 1" stroke="#31473B" stroke-width="2" />
+                    </svg>
+                  </span>
+
+                  <ul class="select-list bg-white shadow-lg translate-y-[2px] border-[1px] border-turquoise-normal p-[4px_6px] rounded-[4px]">
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1/4''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">3/8''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1/2''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">3/4''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1''</li>
+                  </ul>
+                </div>
+                <!-- <div class="card__config-select">
                   <select value="defalt" placeholder="Choose an Option">
                     <option value="defalt">Choose on Option...</option>
                     <option value="1/4">1/4''</option>
@@ -85,11 +105,30 @@
                     <option value="3/4">3/4''</option>
                     <option value="1">1''</option>
                   </select>
-                </div>
+                </div> -->
               </div>
               <div class="card__config-option flex flex-col gap-y-[5px]">
                 <label>Connections <span>*</span></label>
-                <div class="card__config-select">
+
+                <div class="card__config-select select text-[12px]">
+                  <span class="select-button bg-[#F8F8F8] w-full border-[1px] border-turquoise-normal rounded-[4px] cursor-pointer px-[20px] py-[10px] gap-x-[40px] flex items-center justify-between">
+                    <span class="select-value"> Choose on Option... </span>
+
+                    <svg class="transition-all" width="14" height="8" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L8 8L15 1" stroke="#31473B" stroke-width="2" />
+                    </svg>
+                  </span>
+
+                  <ul class="select-list bg-white shadow-lg translate-y-[2px] border-[1px] border-turquoise-normal p-[4px_6px] rounded-[4px]">
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1/4''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">3/8''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1/2''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">3/4''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1''</li>
+                  </ul>
+                </div>
+
+                <!-- <div class="card__config-select">
                   <select disabled value="defalt" placeholder="Choose an Option">
                     <option value="defalt">Choose on Option...</option>
                     <option value="1/4">1/4''</option>
@@ -98,11 +137,29 @@
                     <option value="3/4">3/4''</option>
                     <option value="1">1''</option>
                   </select>
-                </div>
+                </div> -->
               </div>
               <div class="card__config-option flex flex-col gap-y-[5px]">
                 <label>DN <span>*</span></label>
-                <div class="card__config-select">
+
+                <div class="card__config-select select text-[12px]">
+                  <span class="select-button bg-[#F8F8F8] w-full border-[1px] border-turquoise-normal rounded-[4px] cursor-pointer px-[20px] py-[10px] gap-x-[40px] flex items-center justify-between">
+                    <span class="select-value"> Choose on Option... </span>
+
+                    <svg class="transition-all" width="14" height="8" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L8 8L15 1" stroke="#31473B" stroke-width="2" />
+                    </svg>
+                  </span>
+
+                  <ul class="select-list bg-white shadow-lg translate-y-[2px] border-[1px] border-turquoise-normal p-[4px_6px] rounded-[4px]">
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1/4''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">3/8''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1/2''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">3/4''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1''</li>
+                  </ul>
+                </div>
+                <!-- <div class="card__config-select">
                   <select disabled value="defalt" placeholder="Choose an Option">
                     <option value="defalt">Choose on Option...</option>
                     <option value="1/4">1/4''</option>
@@ -111,11 +168,30 @@
                     <option value="3/4">3/4''</option>
                     <option value="1">1''</option>
                   </select>
-                </div>
+                </div> -->
               </div>
               <div class="card__config-option flex flex-col gap-y-[5px]">
                 <label>Material <span>*</span></label>
-                <div class="card__config-select">
+
+                <div class="card__config-select select text-[12px]">
+                  <span class="select-button bg-[#F8F8F8] w-full border-[1px] border-turquoise-normal rounded-[4px] cursor-pointer px-[20px] py-[10px] gap-x-[40px] flex items-center justify-between">
+                    <span class="select-value"> Choose on Option... </span>
+
+                    <svg class="transition-all" width="14" height="8" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L8 8L15 1" stroke="#31473B" stroke-width="2" />
+                    </svg>
+                  </span>
+
+                  <ul class="select-list bg-white shadow-lg translate-y-[2px] border-[1px] border-turquoise-normal p-[4px_6px] rounded-[4px]">
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1/4''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">3/8''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1/2''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">3/4''</li>
+                    <li class="select-option p-[4px_8px] hover-transition hover:bg-blue-100 rounded-[4px]">1''</li>
+                  </ul>
+                </div>
+
+                <!-- <div class="card__config-select">
                   <select disabled value="defalt" placeholder="Choose an Option">
                     <option value="defalt">Choose on Option...</option>
                     <option value="1/4">1/4''</option>
@@ -124,7 +200,7 @@
                     <option value="3/4">3/4''</option>
                     <option value="1">1''</option>
                   </select>
-                </div>
+                </div> -->
               </div>
             </div>
 
