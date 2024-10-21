@@ -3,8 +3,8 @@
     <div class="card__container container">
       <div class="card__body flex flex-col lg:flex-row gap-y-[30px] gap-x-[60px] xl:gap-x-[120px]">
         <div class="card__info flex flex-col w-full lg:max-w-[475px]">
-          <div data-gallery class="card__gallery flex flex-col-reverse lg:flex-row items-start gap-[20px] gap-x-[20px] mb-[20px]">
-            <div class="card__gallery-overflow w-full lg:max-w-[130px]">
+          <div class="card__gallery flex flex-col-reverse lg:flex-row items-start gap-[20px] gap-x-[20px] mb-[20px]">
+            <!-- <div class="card__gallery-overflow w-full lg:max-w-[130px]">
               <ul class="card__gallery-list flex flex-row lg:flex-col items-center gap-[30px]">
                 <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/1.png" alt="" /></li>
                 <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
@@ -18,13 +18,54 @@
                 <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
                 <li data-gallery-img class="card__gallery-img"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></li>
               </ul>
+            </div> -->
+            <div class="swiper card__gallery-thumb-slider w-full lg:max-w-[130px] max-h-[320px] min-h-[100px] pr-[5px]">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card__gallery-img w-auto"><img class="w-full max-w-[130px] object-contain" src="./img/product/1.png" alt="" /></div>
+                <div class="swiper-slide card__gallery-img w-auto"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></div>
+                <div class="swiper-slide card__gallery-img w-auto"><img class="w-full max-w-[130px] object-contain" src="./img/product/1.png" alt="" /></div>
+                <div class="swiper-slide card__gallery-img w-auto"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></div>
+                <div class="swiper-slide card__gallery-img w-auto"><img class="w-full max-w-[130px] object-contain" src="./img/product/1.png" alt="" /></div>
+                <div class="swiper-slide card__gallery-img w-auto"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></div>
+                <div class="swiper-slide card__gallery-img w-auto"><img class="w-full max-w-[130px] object-contain" src="./img/product/1.png" alt="" /></div>
+                <div class="swiper-slide card__gallery-img w-auto"><img class="w-full max-w-[130px] object-contain" src="./img/product/2.png" alt="" /></div>
+              </div>
             </div>
-            <div class="card__gallery-result relative w-full flex flex-col items-center bg-[#F9F9F9] rounded-[10px] pt-[10px] text-center text-[20px] text-gray-600">
+
+            <div class="card__gallery-result relative w-full h-full flex flex-col items-center bg-[#F9F9F9] rounded-[10px] pt-[10px] text-center text-[20px] text-gray-600">
               <h5>Valesteam ADCA</h5>
 
-              <svg data-gallery-left-button class="absolute lg:hidden top-1/2 -translate-y-1/2 left-0 z-10" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="currentColor" d="m8.5 12.8l5.7 5.6c.4.4 1 .4 1.4 0s.4-1 0-1.4l-4.9-5l4.9-5c.4-.4.4-1 0-1.4c-.2-.2-.4-.3-.7-.3s-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6q0-.15 0 0" /></svg>
-              <svg data-gallery-right-button class="absolute lg:hidden top-1/2 -translate-y-1/2 right-0 z-10" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="currentColor" d="M15.54 11.29L9.88 5.64a1 1 0 0 0-1.42 0a1 1 0 0 0 0 1.41l4.95 5L8.46 17a1 1 0 0 0 0 1.41a1 1 0 0 0 .71.3a1 1 0 0 0 .71-.3l5.66-5.65a1 1 0 0 0 0-1.47" /></svg>
-              <img data-gallery-result src="./img/product/1.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
+              <div style="--swiper-navigation-color: #000" class="swiper card__gallery-slider w-full lg:max-w-[325px] h-full">
+                <div class="swiper-wrapper min-h-[200px]">
+                  <div class="swiper-slide h-auto flex justify-center items-center">
+                    <img src="./img/product/1.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
+                  </div>
+                  <div class="swiper-slide h-auto flex justify-center items-center">
+                    <img src="./img/product/2.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
+                  </div>
+                  <div class="swiper-slide h-auto flex justify-center items-center">
+                    <img src="./img/product/1.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
+                  </div>
+                  <div class="swiper-slide h-auto flex justify-center items-center">
+                    <img src="./img/product/2.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
+                  </div>
+                  <div class="swiper-slide h-auto flex justify-center items-center">
+                    <img src="./img/product/1.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
+                  </div>
+                  <div class="swiper-slide h-auto flex justify-center items-center">
+                    <img src="./img/product/2.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
+                  </div>
+                  <div class="swiper-slide h-auto flex justify-center items-center">
+                    <img src="./img/product/1.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
+                  </div>
+                  <div class="swiper-slide h-auto flex justify-center items-center">
+                    <img src="./img/product/2.png" class="w-full h-full max-h-[260px] object-contain" alt="" />
+                  </div>
+                </div>
+
+                <div class="swiper-button-next card__gallery-slider-next lg:hidden"></div>
+                <div class="swiper-button-prev card__gallery-slider-prev lg:hidden"></div>
+              </div>
             </div>
           </div>
           <div class="card__specifications mb-[20px]">

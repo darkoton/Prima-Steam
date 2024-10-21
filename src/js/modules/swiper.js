@@ -5,9 +5,9 @@ new Swiper('.catalog__slider', {
   loop: true,
   speed: 1000,
 
-  // autoplay: {
-  //   delay: 3500,
-  // },
+  autoplay: {
+    delay: 3500,
+  },
   pagination: {
     el: '.catalog__button-pagination',
   },

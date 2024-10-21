@@ -1,25 +1,25 @@
 .card {
-  &__gallery-overflow {
-    max-height: 320px;
-    min-height: 100px;
-    overflow: auto;
-    padding-right: 5px;
-    &::-webkit-scrollbar {
-      width: 3px;
-      height: 3px;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: #ccc;
-      border-radius: 5px;
-    }
-    &::-webkit-scrollbar-track {
-      background: transparent;
-    }
+  // &__gallery-overflow {
+  //   max-height: 320px;
+  //   min-height: 100px;
+  //   overflow: auto;
+  //   padding-right: 5px;
+  //   &::-webkit-scrollbar {
+  //     width: 3px;
+  //     height: 3px;
+  //   }
+  //   &::-webkit-scrollbar-thumb {
+  //     background: #ccc;
+  //     border-radius: 5px;
+  //   }
+  //   &::-webkit-scrollbar-track {
+  //     background: transparent;
+  //   }
 
-    @media (max-width: 1024px) {
-      width: 100%;
-    }
-  }
+  //   @media (max-width: 1024px) {
+  //     width: 100%;
+  //   }
+  // }
   &__gallery-img {
     min-width: 100px;
     border: 1px solid transparent;
@@ -36,7 +36,7 @@
         border-color: var(--gray-500);
       }
     }
-    &._active {
+    &.swiper-slide-thumb-active {
       border-color: var(--gray-500);
     }
   }
