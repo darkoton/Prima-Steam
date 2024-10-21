@@ -13,6 +13,10 @@ body {
   font-family: "Inter", sans-serif;
   color: #000;
   font-size: 14px;
+  @supports (-webkit-touch-callout: none) {
+    /* Стили для Safari */
+    font-weight: 600;
+  }
 
   // ._lock-scroll
   &._lock-scroll {

@@ -28,7 +28,7 @@
               <li class="flex items-center gap-x-[12px]">
                 <div class="inline-flex items-center">
                   <label class="flex items-center cursor-pointer relative">
-                    <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="check" />
+                    <input id="clickAndCollect" type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="check" />
                     <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
                       <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -37,12 +37,12 @@
                   </label>
                 </div>
 
-                <span class="text-[15px]">Click and collect</span>
+                <label for="clickAndCollect" class="text-[15px]">Click and collect</label>
               </li>
               <li class="flex items-center gap-x-[12px]">
                 <div class="inline-flex items-center">
                   <label class="flex items-center cursor-pointer relative">
-                    <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="check" />
+                    <input id="delivery" type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="check" />
                     <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
                       <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -51,12 +51,12 @@
                   </label>
                 </div>
 
-                <span class="text-[15px]">Delivery to customer</span>
+                <label for="delivery" class="text-[15px]">Delivery to customer</label>
               </li>
             </ul>
 
             <div class="flex items-center gap-x-[15px] mb-[15px] w-full md:max-w-[340px] bg-[#FDFAF3] rounded-[15px] px-[10px] py-[15px]">
-              <img src="./img/global/mark-info.png" alt="" />
+              <img src="./img/global/mark-info.svg" alt="" />
               <p class="text-[14px] leading-[16px]">See T&C's for further information about carriage charges</p>
             </div>
 
@@ -67,7 +67,7 @@
               <li class="flex items-center gap-x-[12px]">
                 <div class="inline-flex items-center">
                   <label class="flex items-center cursor-pointer relative">
-                    <input type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="check" />
+                    <input id="receive" type="checkbox" class="peer h-[28px] w-[28px] cursor-pointer transition-all appearance-none rounded-[6px] shadow hover:shadow-md border-[1px] border-turquoise-normal checked:bg-link-blue-normal checked:border-link-blue-normal" id="check" />
                     <span class="absolute text-white opacity-0 peer-checked:opacity-100 w-1/2 h-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
                       <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -75,7 +75,7 @@
                     </span>
                   </label>
                 </div>
-                <span class="text-[15px]">Receive Prima Steam Catalog (optional)</span>
+                <label for="receive" class="text-[15px]">Receive Prima Steam Catalog (optional)</label>
               </li>
             </ul>
           </div>
@@ -87,7 +87,7 @@
           </div>
 
           <div class="flex items-center gap-x-[10px] py-[10px] border-y-[1px] border-gray-600">
-            <img src="./img/global/mark.png" alt="" />
+            <img src="./img/global/mark.svg" alt="" />
 
             <p class="text-[14px] leading-[16px]">We are currently having issues with pricing on some of the product pages, prices within the basket are correct and up to date. For further assistance please contact +48 698-908-0423</p>
           </div>
@@ -95,7 +95,7 @@
           <h5 class="font-bold text-[16px] mb-[5px]">Ask for Quote</h5>
 
           <div class="flex items-center gap-x-[15px] mb-[15px] w-full bg-[#FDFAF3] rounded-[15px] px-[10px] py-[15px]">
-            <img src="./img/global/mark-info.png" alt="" />
+            <img src="./img/global/mark-info.svg" alt="" />
             <p class="text-[14px] leading-[16px]">By submiting Quotation you agreed that Your personal data will be used to process your Quotation Process, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
           </div>
 
